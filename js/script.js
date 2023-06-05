@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import sushi10 from "/assets/sushi-10.png";
 import sushi11 from "/assets/sushi-11.png";
 import sushi12 from "/assets/sushi-12.png";
+import star from "/assets/star.svg";
 
 
 // init AOS animation
@@ -13,21 +14,21 @@ AOS.init({
 
 const cardsData = [
   {
-    imageSrc: {sushi12},
+    imageSrc: sushi12,
     imageAlt: "sushi-12",
     title: "Chezu Sushi",
     rating: "4.9",
     price: "$21.00",
   },
   {
-    imageSrc: {sushi11},
+    imageSrc: sushi11,
     imageAlt: "sushi-11",
     title: "Original Sushi",
     rating: "5.0",
     price: "$19.00",
   },
   {
-    imageSrc: {sushi10},
+    imageSrc: sushi10,
     imageAlt: "sushi-10",
     title: "Ramen Legendo",
     rating: "4.7",
@@ -57,7 +58,7 @@ cardsData.forEach((cardData) => {
   rating.classList.add("popular-food__card-rating");
 
   const ratingImage = document.createElement("img");
-  ratingImage.src = "assets/star.svg";
+  ratingImage.src = star;
   ratingImage.alt = "star";
 
   const ratingValue = document.createElement("p");
